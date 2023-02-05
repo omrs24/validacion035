@@ -1,0 +1,95 @@
+       .expansor-enlaces{
+            width: 100%;
+        }
+        .btn-nom{
+            background: #226597;
+            color:#fff;
+        }
+        .btn-nom:hover{
+            background: #113f67;
+            opacity: .9;
+            color:#fff;
+        }
+        .card-body{
+            font-size: .8em;
+        }
+        .card-body .btn{
+            font-size: 1em;
+            padding:.5em 3em;
+        }
+        .btn-g2{
+            height:4em;
+            width: 4.5rem;
+            text-align: center;
+            padding-bottom: 3rem!important;
+        }
+       
+        @media screen and (max-width:767px) and (min-width:576px){ 
+            .btn-g2{
+            width: 7em;
+            font-size: 4em;
+            }
+        }
+         @media screen and (max-width:575px){ 
+            .btn-g2{
+            width: 7em;
+            font-size: .75em!important;
+            padding-bottom: 2rem !important;
+            }
+        }
+        @media screen and (max-width:400px){ 
+            .btn-g2{
+            width: 9em;
+            font-size: .4em!important;
+            padding-bottom: 2rem !important;
+            }
+        }
+        
+        
+        
+         .btn-si:not(:disabled):not(.disabled).active, .btn-si:not(:disabled):not(.disabled):active, .show>.btn-si.dropdown-toggle {
+            color: #fff;
+            background-color: #86a2ba;
+            border-color: #86a2ba;
+        }
+        .btn-cs:not(:disabled):not(.disabled).active, .btn-cs:not(:disabled):not(.disabled):active, .show>.btn-cs.dropdown-toggle{
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-cn:not(:disabled):not(.disabled).active, .btn-cs:not(:disabled):not(.disabled):active, .show>.btn-cs.dropdown-toggle{
+            color: black;
+            background-color: #FF9600;
+            border-color: #FF9803;
+        }
+        .btn-av:not(:disabled):not(.disabled).active, .btn-av:not(:disabled):not(.disabled):active, .show>.btn-av.dropdown-toggle{
+            color: #212529;
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        .btn-no:not(:disabled):not(.disabled).active, .btn-no:not(:disabled):not(.disabled):active, .show>.btn-no.dropdown-toggle {
+            color: #fff;
+            background-color: #bd2130;
+            border-color: #b21f2d;
+        }
+
+        .btn-instrucciones{
+            max-height:50px;
+        }
+        .bg-mov-instrucciones{
+            background-color: #343a40;
+            border-color: #343a40;
+            height: 2rem;
+            padding-top: .35em;
+        }
+        .contenedor-video{
+            width:500px; 
+            height:300px;
+        }
+        
+        .abs-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        

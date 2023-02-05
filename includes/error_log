@@ -1,0 +1,62 @@
+[06-Jan-2020 18:51:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 18:52:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 18:57:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 19:00:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 19:01:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 19:13:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 19:13:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 19:17:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[06-Jan-2020 19:35:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'validaci_phuser'@'localhost' to database 'validaci_035' in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php:8
+Stack trace:
+#0 /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php(8): PDO->__construct('mysql:host=loca...', 'validaci_phuser', 'Wja*2{m2')
+#1 /hostingDataA4/validacionnom035/public_html/formularios/includes/process_login.php(2): include_once('/hostingDataA4/...')
+#2 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/db.php on line 8
+[12-Jan-2020 20:12:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on bool in /hostingDataA4/validacionnom035/public_html/formularios/includes/exportExcel.php:11
+Stack trace:
+#0 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/exportExcel.php on line 11
+[13-Jan-2020 04:49:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on bool in /hostingDataA4/validacionnom035/public_html/formularios/includes/registeruser.php:16
+Stack trace:
+#0 {main}
+  thrown in /hostingDataA4/validacionnom035/public_html/formularios/includes/registeruser.php on line 16
