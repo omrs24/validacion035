@@ -1,5 +1,5 @@
 <?php
-    include_once('includes/db.php');
+    /*include_once('includes/db.php');
     session_start();
     $timeout = 7200; // 2 hours
     if(isset($_SESSION['timeout'])) {
@@ -15,7 +15,7 @@
         header("Location: login.php");
         die();
     }
-    
+    */
 ?>
 <!DOCTYPE html>
 <html lang="es-mx">
@@ -47,7 +47,7 @@
                        <a href="/formularios/test2b.php">Test 2</a>
                    </li>
                    <li>
-                       Bienvenido <span class="font-weight-bold"><?php echo $_SESSION['nombrecorto'];?></span>
+                       Bienvenido <span class="font-weight-bold">Usuario <?php //echo $_SESSION['nombrecorto'];?></span>
                    </li>
                    <li>
                        <a href="includes/logout.php"><span>Salir</span><i class="icon-logout"></i></a>
@@ -68,13 +68,13 @@
             </div>
         <form id="send-test" action="" method="POST" class="form">
             <?php 
-            $id = $_SESSION['ID'];
+            /*$id = $_SESSION['ID'];
             $query = "SELECT * FROM valid035_test2b WHERE employee ='$id'";
             $retval = $db->query($query);
             $row = $retval->fetch();
             $empid = $row['employee'];
             if($id == $empid)
-            {
+            {*/
                 ?>
                 <!--MENSAJE DE CUESTIONARIO YA CONTESTADO-->
                 <div class="container border border-dark bg-light rounded p-5 mt-5" id="contestadoantes">
@@ -94,10 +94,10 @@
                         </div>
                     </div>
                 </div>
-                <?php
+                <?php/*
             }
             else
-            {
+            {*/
             ?>
                 <!--GUÍA 2-->
                 <div class="row mt-5">
@@ -333,8 +333,8 @@
                         </div>
                     </div> 
                 </div>
-            <?php 
-            }
+            <?php /*
+            }*/
             ?>
             </form>
     <footer class="footer">

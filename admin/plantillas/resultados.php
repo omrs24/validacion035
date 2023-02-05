@@ -23,8 +23,31 @@
                     <th></th>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Juan
+                        </td>
+                        <td>
+                            Hernandez
+                        </td>
+                        <td>
+                            juan.hernandez@domain.com
+                        </td>
+                        <td>
+                            XXXXXXXX
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            <button type='button' class='btn btnUser' data-id='1' data-toggle='modal' data-target='#VerResult'><i class='fas fa-eye'></i></button>
+                        </td>
+                    </tr>
                 <?php
-                    $myQuery = "SELECT t1.ID,t1.nombre,t1.apellido,t1.correo,t1.RFCURP,t2.p1 FROM valid035_users t1 LEFT JOIN valid035_test2b t2 ON t1.ID = t2.employee";
+                    /*$myQuery = "SELECT t1.ID,t1.nombre,t1.apellido,t1.correo,t1.RFCURP,t2.p1 FROM valid035_users t1 LEFT JOIN valid035_test2b t2 ON t1.ID = t2.employee";
                     $result = $db->query($myQuery);
                     while($row = $result->fetch()){
                         $contesto = $row['p1'] ? 'si' : "no";
@@ -51,7 +74,7 @@
                                         </td>
                                     </tr>"; 
                         echo $body;
-                    }
+                    }*/
                 ?>
                 </tbody>
             </table>
@@ -61,7 +84,7 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Usuario: <span id="txtUsuario"></span></h5>
+                    <h5 class="modal-title">Usuario: <span id="txtUsuario">Juan Hernandez</span></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -70,7 +93,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="border border-rounded h-25">
+                                <div class="border border-rounded h-50">
                                     <div class="bg-danger text-white font-weight-bolder h-25 w-25">
                                         <p class="text-center my-auto">Muy Alto</p>
                                     </div>
@@ -102,7 +125,7 @@
                                                     <b>Ambiente de trabajo: </b>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <span id="txtAmbienteTrabajo"></span> 
+                                                    <span id="txtAmbienteTrabajo">12</span> 
                                                 </div>
                                             </div>
                                             <hr>
@@ -111,7 +134,7 @@
                                                     <b>Factores propios de la actividad: </b>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <span id="txtFactoresPropios"></span>
+                                                    <span id="txtFactoresPropios">31</span>
                                                 </div>
                                             </div>
                                             <hr>
@@ -120,7 +143,7 @@
                                                     <b>Organizacion del tiempo de trabajo: </b>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <span id="txtOrganizacionTiempo"></span><br>
+                                                    <span id="txtOrganizacionTiempo">21</span><br>
                                                 </div>
                                             </div>
                                             <hr>
@@ -129,7 +152,7 @@
                                                     <b>Liderazgo y relaciones de trabajo: </b>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <span id="txtLiderazgoRelaciones"></span>
+                                                    <span id="txtLiderazgoRelaciones">12</span>
                                                 </div>
                                             </div>
                                             <hr>
@@ -138,7 +161,7 @@
                                                     <b>Entorno organizacional: </b> <br>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <span id="txtEntornoOrg"></span><br>
+                                                    <span id="txtEntornoOrg">12</span><br>
                                                 </div>
                                             </div>
                                             <hr>
@@ -158,7 +181,7 @@
                                                             <b>Condiciones en el ambiente de trabajo: </b>
                                                         </div>
                                                         <div class="col-md-3">
-                                                        <span id="txtCondicAmbiente"></span> 
+                                                        <span id="txtCondicAmbiente">32</span> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -168,7 +191,7 @@
                                                             <b>Carga de Trabajo: </b>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtCargaTrabajo"></span>
+                                                            <span id="txtCargaTrabajo">15</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -181,7 +204,7 @@
                                                             <b>Falta de control sobre el trabajo: </b>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtControlTrabajo"></span><br>
+                                                            <span id="txtControlTrabajo">5</span><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -191,7 +214,7 @@
                                                             <b>Jonada de trabajo: </b>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtJornadaTrabajo"></span>
+                                                            <span id="txtJornadaTrabajo">3</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -204,7 +227,7 @@
                                                             <b>Interferencia en la relacion trabajo-familia: </b> <br>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtInterfTF"></span><br>
+                                                            <span id="txtInterfTF">4</span><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -214,7 +237,7 @@
                                                             <b>Liderazgo: </b> <br>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtLiderazgo"></span><br>
+                                                            <span id="txtLiderazgo">4</span><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -227,7 +250,7 @@
                                                             <b>Relaciones de trabajo: </b> <br>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtRelacionesTrabajo"></span><br>
+                                                            <span id="txtRelacionesTrabajo">12</span><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -237,7 +260,7 @@
                                                             <b>Violencia: </b> <br>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtViolencia"></span><br>
+                                                            <span id="txtViolencia">12</span><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -250,7 +273,7 @@
                                                             <b>Reconocimiento del desempe&ntilde;o: </b> <br>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtReconoDesemp"></span><br>
+                                                            <span id="txtReconoDesemp">21</span><br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -260,7 +283,7 @@
                                                             <b>Insuficiente sentido de pertenencia e, Inestabilidad: </b> <br>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <span id="txtInsuficienciaSentido"></span><br>
+                                                            <span id="txtInsuficienciaSentido">34</span><br>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -1,6 +1,6 @@
 
     <?php 
-        $empleadoID = $_REQUEST["empleadoID"];
+        /*$empleadoID = $_REQUEST["empleadoID"];
         $apellido_empleado = "";
         $nombre_empleado = "";
         $correo_empleado = "";
@@ -19,7 +19,7 @@
             $rfcurp_empleado = $rowUser["RFCURP"];
             $compania_emlpeado = $rowUser["compania"];
             $sucursal_empleado = $rowUser["sucursal"];
-        }
+        }*/
     ?>
     <div class="row d-flex justify-content-center contenedor-titulo mt-2">
         <div class="col">
@@ -38,8 +38,8 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text d-none d-sm-block">Nombre</span>
                     </div>
-                    <input type="text" placeholder="Nombre" name="nombre-empleado" id="nombre-empleado" value="<?php echo $nombre_empleado;?>" class="form-control mr-3">
-                    <input type="hidden" id="empleadoID" name="empleadoID" value="<?php echo $empleadoID; ?>">
+                    <input type="text" placeholder="Nombre" name="nombre-empleado" id="nombre-empleado" value="<?php //echo $nombre_empleado;?>" class="form-control mr-3">
+                    <input type="hidden" id="empleadoID" name="empleadoID" value="<?php //echo $empleadoID; ?>">
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text d-none d-sm-block">Apellidos</span>
                     </div>
-                    <input type="text" placeholder="Apellidos" name="apellidos-empleado" id="apellidos-empleado" value="<?php echo $apellido_empleado;?>" class="form-control mr-3">
+                    <input type="text" placeholder="Apellidos" name="apellidos-empleado" id="apellidos-empleado" value="<?php //echo $apellido_empleado;?>" class="form-control mr-3">
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text d-none d-sm-block">Correo</span>
                     </div>
-                    <input type="text" placeholder="Correo" name="correo-empleado" id="correo-empleado" value="<?php echo $correo_empleado;?>" class="form-control mr-3">
+                    <input type="text" placeholder="Correo" name="correo-empleado" id="correo-empleado" value="<?php //echo $correo_empleado;?>" class="form-control mr-3">
                 </div>
             </div>
             <div class="col-lg-5 d-flex-left">
@@ -76,7 +76,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text d-none d-sm-block">RFC O CURP</span>
                     </div>
-                    <input type="text" placeholder="RFC O CURP" name="rfcocurp-empleado" id="rfcocurp-empleado" value="<?php echo $rfcurp_empleado;?>" class="form-control mr-3 pwd1">
+                    <input type="text" placeholder="RFC O CURP" name="rfcocurp-empleado" id="rfcocurp-empleado" value="<?php //echo $rfcurp_empleado;?>" class="form-control mr-3 pwd1">
                     <div class="input-group-append">
                         <!--<button class="btn btn-outline-secondary mr-3 showpass1" type="button"><i class="fas fa-eye"></i></button>
                         icon-eye-close-->
@@ -96,7 +96,7 @@
                     </div>
                     <select class="form-control mr-3" id="ddlcompaniaempleado" name="ddlcompaniaempleado">
                         <option value="" disabled selected>Selecciona...</option>
-                        	<?php
+                        	<?php/*
                 			$myQuery = $db->query("SELECT ID, CONCAT(nombre, ' (', ID, ')') nombre FROM valid035_companies ORDER BY nombre");
                 			while($row = $myQuery->fetch()){
                                 if ($compania_emlpeado == $row["ID"])
@@ -108,7 +108,7 @@
                                     $selected = '';
                                 }					
                 				echo "<option value='".$row["ID"]."' ".$selected.">".$row["nombre"]."</option>";
-                			};
+                			};*/
                 			?>
                     </select>
                 </div>
@@ -123,7 +123,7 @@
                     </div>
                     <select class="form-control mr-3" id="ddlsucursalempleado" name="ddlsucursalempleado">
                         <option value="" disabled selected>Selecciona...</option>
-                        	<?php
+                        	<?php/*
                 			$myQuery = $db->query("SELECT ID, CONCAT(name, ' (', ID, ')') name FROM valid035_offices ORDER BY name");
                 			while($row = $myQuery->fetch()){
                                 if ($sucursal_empleado == $row["ID"])
@@ -135,7 +135,7 @@
                                     $selected = '';
                                 }			
                 				echo "<option value='".$row["ID"]."' ".$selected.">".$row["name"]."</option>";
-                			};
+                			};*/
                 			?>
                     </select>
                 </div>
@@ -193,8 +193,40 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php
-                    $compania = $_SESSION["compania"];
+                        <tr>
+                            <td>
+                                Juan
+                            </td>
+                            <td>
+                                Hernandez
+                            </td>
+                            <td>
+                                juan.hernandez@domain.com
+                            </td>
+                            <td>
+                                XXXXXXXX
+                            </td>
+                            <td>
+                                Compañia
+                            </td>
+                            <td>
+                                SI
+                            </td>
+                            <td>
+                                SI
+                            </td>
+                            <td>
+                                SI
+                            </td>
+                            <td>
+                                <i class='fas fa-edit edit-emp' data-id='$row[ID]'></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <?php
+                    /*$compania = $_SESSION["compania"];
                     $query = "SELECT t1.ID,t1.nombre, t1.apellido,t1.correo,t1.RFCURP,t2.nombre cnombre FROM valid035_users t1 LEFT JOIN valid035_companies t2 ON t1.compania = t2.ID WHERE t1.activo = 'Y' AND t1.admin = 0 AND t2.ID = 2";
                         $result = $db->query($query);
                         while($row = $result->fetch()){
@@ -228,10 +260,8 @@
                                         </td>
                                     </tr>"; 
                             echo $body;
-                        }
+                        }*/
                     ?>
-                </tbody>
-                </table>
             </div>
         </div>
     </div>

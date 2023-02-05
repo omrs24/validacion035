@@ -1,7 +1,7 @@
 <?php
     //include_once('includes/db.php');
     session_start();
-    $timeout = 7200; // 2 hours
+    /*$timeout = 7200; // 2 hours
     if(isset($_SESSION['timeout'])) {
         $duration = time() - (int)$_SESSION['timeout'];
         if($duration > $timeout) {
@@ -11,7 +11,7 @@
     }
     $_SESSION['timeout'] = time();
     
-    /*if($_SESSION["authenticated_user"] != true) {
+    if($_SESSION["authenticated_user"] != true) {
         header("Location: login.php");
         die();
     }*/
@@ -45,7 +45,7 @@
                        <a href="/formularios/test2.php">Test 2</a>
                    </li>
                    <li>
-                       Bienvenido <span class="font-weight-bold"><?php echo $_SESSION['nombrecorto'];?></span>
+                       Bienvenido <span class="font-weight-bold"> Usuario<?php //echo $_SESSION['nombrecorto'];?></span>
                    </li>
                    <li>
                        <a href="includes/logout.php"><span>Salir</span><i class="icon-logout"></i></a>
@@ -60,13 +60,13 @@
         <!--MENU CON PESTANAS-->
         <div class="container pt-5">
             <?php 
-            $id = $_SESSION['ID'];
+            /*$id = $_SESSION['ID'];
             $query = "SELECT * FROM valid035_test1 WHERE employee ='$id'";
             $retval = $db->query($query);
             $row = $retval->fetch();
             $empid = $row['employee'];
             if($id == $empid)
-            {
+            {*/
                 ?>
                 <!--MENSAJE DE CUESTIONARIO YA CONTESTADO-->
                 <div class="container border border-dark bg-light rounded p-5 mt-5" id="contestadoantes">
@@ -86,10 +86,10 @@
                         </div>
                     </div>
                 </div>
-                <?php
+                <?php/*
             }
             else
-            {
+            {*/
             ?>
                 <!--GUÍA 1-->
                 <div id="cont-odo">
@@ -490,8 +490,8 @@
                         <input type="submit" class="btn btn-primary d-none" value="Enviar respuestas" id="btnSendTest" onclick="evaluar()">
                     </div>
                 </div> 
-            <?php  
-            }
+            <?php  /*
+            }*/
             ?>
         </div>
         </form>

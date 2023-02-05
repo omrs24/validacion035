@@ -1,6 +1,6 @@
 <?php
     
-    session_start();
+    /*session_start();
     $timeout = 7200; // 2 hours
     if(isset($_SESSION['timeout'])) {
         $duration = time() - (int)$_SESSION['timeout'];
@@ -20,7 +20,7 @@
         {
             header("Location: admin/dashboard.php");
         }
-    }
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -25,19 +25,19 @@
                 <input type="button" class="btn btn-secondary" value="Cancelar">
             </div>
             <div class="col-1 m-3 d-flex-left">
-                <?php
+                <?php/*
                 if($_SESSION["sadmin"]==1)
-                {
+                {*/
                     ?>
                     <input type="submit" class="btn btn-primary" id="btnCrearCompania" value="Crear">
-                    <?php
+                    <?php/*
                 }
                 else
-                {
+                {*/
                 ?>
                     <input type="submit" class="btn btn-primary" disabled id="btnCrearCompania" value="Crear">
-                <?php
-                }
+                <?php/*
+                }*/
                 ?>
                 
             </div>
@@ -68,7 +68,7 @@
                     <select class="form-control mr-3" id="ddlcompaniasucursal" name="ddlcompaniasucursal">
                         <option value="" disabled selected>Selecciona...</option>
                     	<?php
-                    	
+                    	/*
             			if($_SESSION['sadmin'] == 1)
             			{
             			    $myQuery = $db->query("SELECT ID, CONCAT(nombre, ' (', ID, ')') nombre FROM valid035_companies ORDER BY nombre");   
@@ -80,7 +80,7 @@
             			}
             			while($row = $myQuery->fetch()){			
             				echo "<option value='".$row["ID"]."'>".$row["nombre"]."</option>";
-            			};
+            			};*/
             			?>
                     </select>
                 </div>

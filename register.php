@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    include_once('includes/db.php');
+    /*session_start();
+    include_once('includes/db.php');*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -176,10 +176,10 @@
                     <select class="form-control mr-3" id="ddlcompaniaempleado" name="ddlcompaniaempleado" required>
                         <option value="" disabled selected>Selecciona...</option>
                         	<?php
-                			$myQuery = $db->query("SELECT ID, CONCAT(nombre, ' (', ID, ')') nombre FROM valid035_companies ORDER BY nombre");
+                			/*$myQuery = $db->query("SELECT ID, CONCAT(nombre, ' (', ID, ')') nombre FROM valid035_companies ORDER BY nombre");
                 			while($row = $myQuery->fetch()){			
                 				echo "<option value='".$row["ID"]."'>".$row["nombre"]."</option>";
-                			};
+                			};*/
                 			?>
                     </select>
                 </div>
@@ -192,10 +192,10 @@
                     <select class="form-control mr-3" id="ddlsucursalempleado" name="ddlsucursalempleado" required>
                         <option value="" disabled selected>Selecciona...</option>
                         	<?php
-                			$myQuery = $db->query("SELECT ID, CONCAT(name, ' (', ID, ')') name FROM valid035_offices ORDER BY name");
+                			/*$myQuery = $db->query("SELECT ID, CONCAT(name, ' (', ID, ')') name FROM valid035_offices ORDER BY name");
                 			while($row = $myQuery->fetch()){			
                 				echo "<option value='".$row["ID"]."'>".$row["name"]."</option>";
-                			};
+                			};*/
                 			?>
                     </select>
                 </div>

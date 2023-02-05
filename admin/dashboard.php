@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    /*session_start();
     include_once('../includes/db.php');
 
     $timeout = 7200; // 2 hours
@@ -15,7 +15,7 @@
     if($_SESSION["authenticated_user"] != true) {
         header("Location: ../login.php");
         die();
-    }
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,14 +73,14 @@
                     <a href="#resultados" onclick="mostrar('resultados','organizacion','usuarios','configuracion','companias')" class="disabled"><i class="far fa-chart-bar"></i><span>Resultados</span></a>                    
                     <a href="#configuracion" onclick="mostrar('configuracion','organizacion','usuarios','resultados','companias')" class="disabled"><i class="icon-cog-alt"></i><span>Configuración</span></a>
                     <?php
-                    $sadmin = $_SESSION["sadmin"];
+                    /*$sadmin = $_SESSION["sadmin"];
                     if($sadmin == 1)
-                    {
+                    {*/
                     ?>
                     <a href="#admins" class="mt-0" onclick="mostrar('organizacion','resultados','usuarios','configuracion','companias')"><i class="fas fa-user"></i><span>Añadir administrador</span></a>
                     <a href="#companias" onclick="mostrar('companias','configuracion','organizacion','usuarios','resultados')"><i class="fas fa-building"></i><span>Compa&ntilde;&iacute;as y sucursales</span></a>
-                    <?php
-                    }
+                    <?php/*
+                    }*/
                     ?>
                     <a href="../includes/logout.php"><i class="icon-logout mb-0"></i><span>Salir</span></a>
                 </nav>

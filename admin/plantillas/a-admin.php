@@ -83,11 +83,11 @@
                     </div>
                     <select class="form-control mr-3" id="ddlcompaniaadmin" name="ddlcompaniaadmin">
                         <option value="" disabled selected>Selecciona...</option>
-                        	<?php
+                        	<?php/*
                 			$myQuery = $db->query("SELECT ID, CONCAT(nombre, ' (', ID, ')') nombre FROM valid035_companies ORDER BY nombre");
                 			while($row = $myQuery->fetch()){			
                 				echo "<option value='".$row["ID"]."'>".$row["nombre"]."</option>";
-                			};
+                			};*/
                 			?>
                     </select>
                 </div>
@@ -102,11 +102,11 @@
                     </div>
                     <select class="form-control mr-3" id="ddlsucursaladmin" name="ddlsucursaladmin">
                         <option value="" disabled selected>Selecciona...</option>
-                        	<?php
+                        	<?php/*
                 			$myQuery = $db->query("SELECT ID, CONCAT(name, ' (', ID, ')') name FROM valid035_offices ORDER BY name");
                 			while($row = $myQuery->fetch()){			
                 				echo "<option value='".$row["ID"]."'>".$row["name"]."</option>";
-                			};
+                			};*/
                 			?>
                     </select>
                 </div>
@@ -114,8 +114,8 @@
         </div>
         <?php
             //Le da el poder de crear nuevos super admins validando que sea uno
-            if($_SESSION['sadmin'] == 0)
-            {
+            /*if($_SESSION['sadmin'] == 0)
+            {*/
             ?>
             <div class="row mt-3">
                 <div class="col-lg-5 d-flex-left">
@@ -125,8 +125,8 @@
                       </div>
                 </div>
             </div>
-            <?php
-            }
+            <?php/*
+            }*/
             ?>
         <!--botones-->
         <div class="row mt-3 justify-content-around">
@@ -152,7 +152,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php
+                    <?php/*
                         $query = "SELECT t1.nombre,t1.apellido,t1.correo,t1.RFCURP,t2.nombre cnombre FROM valid035_users t1 LEFT JOIN valid035_companies t2 ON t1.compania = t2.ID WHERE t1.activo = 'Y' AND t1.admin = 1 AND t1.sadmin = 0";
                         $result = $db->query($query);
                         while($row = $result->fetch()){
@@ -174,7 +174,7 @@
                                         </td>
                                     </tr>"; 
                             echo $body;
-                        }
+                        }*/
                     ?>
                 </tbody>
                 </table>
