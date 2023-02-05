@@ -19,3 +19,6 @@ Hecho para aplicar encuesta a trabajadores.
 
 - General Data
 ![alt text](https://github.com/omrs24/validacion035/blob/main/img/screenshots/Dashboard_usuarios.jpg)
+
+- Results info
+![alt text](https://github.com/omrs24/validacion035/blob/main/img/screenshots/Dashboard_Resutlados.jpg)
