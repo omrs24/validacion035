@@ -3,12 +3,19 @@
 
 Hecho para aplicar encuesta a trabajadores.
 
+### Quizes
+
 - Register
-https://github.com/omrs24/validacion035/blob/main/img/screenshots/Registrar.jpg
+![alt text](https://github.com/omrs24/validacion035/blob/main/img/screenshots/Registrar.jpg)
 
 - First quiz
-https://github.com/omrs24/validacion035/blob/main/img/screenshots/Cuestionario%201.jpg
+![alt text](https://github.com/omrs24/validacion035/blob/main/img/screenshots/Cuestionario%201.jpg)
 
 - Second Quiz
-https://github.com/omrs24/validacion035/blob/main/img/screenshots/Cuestionario%202a.jpg
+![alt text](https://github.com/omrs24/validacion035/blob/main/img/screenshots/Cuestionario%202a.jpg)
 
+
+### Dashboard
+
+- General Data
+![alt text](https://github.com/omrs24/validacion035/blob/main/img/screenshots/Dashboard_usuarios.jpg)
